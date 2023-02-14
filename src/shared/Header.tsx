@@ -1,5 +1,5 @@
-import { Avatar, Box, Button } from "@mui/material";
-import { NavLink, redirect } from "react-router-dom";
+import { Avatar, Box } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
