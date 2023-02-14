@@ -17,7 +17,7 @@ const NavigationMenu = () => {
           </li>
           <li>
             <NavLink
-              to="/places"
+              to="/u1/places"
               className={(navData) => (navData.isActive ? classes.active : "")}
             >
               {(navData) => (navData.isActive ? <b>PLACES</b> : "PLACES")}
