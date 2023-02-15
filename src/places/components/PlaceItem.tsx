@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Box } from "@mui/system";
+import { NavLink } from "react-router-dom";
 import { Place } from "../pages/UserPlaces";
 
 const PlaceItem = ({ place }: { place: Place }) => {
@@ -39,7 +40,9 @@ const PlaceItem = ({ place }: { place: Place }) => {
         sx={{ justifyContent: "center", padding: "0px 10px 10px 10px" }}
       >
         <Button size="small">VIEW ON MAP</Button>
-        <Button size="small">EDIT</Button>
+        <NavLink style={{ textDecoration: "none" }} to={`${place.id}`}>
+          <Button size="small">EDIT</Button>
+        </NavLink>
         <Button size="small">DELETE</Button>
       </CardActions>
     </Card>

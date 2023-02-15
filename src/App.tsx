@@ -1,7 +1,12 @@
+import AuthContextProvider from "./shared/context/AuthContext";
 import RouterComponent from "./shared/RouterComponent";
 
 function App() {
-  return <RouterComponent />;
+  return (
+    <AuthContextProvider>
+      <RouterComponent />
+    </AuthContextProvider>
+  );
 }
 
 export default App;

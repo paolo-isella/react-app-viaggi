@@ -4,7 +4,7 @@ import { User } from "../pages/Users";
 
 const UserItem = ({ user }: { user: User }) => {
   return (
-    <NavLink style={{ textDecoration: "none" }} to={`/${user.id}/places`}>
+    <NavLink style={{ textDecoration: "none" }} to={`${user.id}/places`}>
       <Card
         sx={{
           background: "#0680bd",

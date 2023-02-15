@@ -25,12 +25,10 @@ const NavigationMenu = () => {
           </li>
           <li>
             <NavLink
-              to="/places/new"
+              to="/u1/places-new"
               className={(navData) => (navData.isActive ? classes.active : "")}
             >
-              {(navData) =>
-                navData.isActive ? <b>NEW PLACES</b> : "NEW PLACES"
-              }
+              {(navData) => (navData.isActive ? <b>NEW PLACE</b> : "NEW PLACE")}
             </NavLink>
           </li>
           <li></li>
